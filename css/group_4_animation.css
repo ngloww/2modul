@@ -1,0 +1,55 @@
+/* Анимация для изменения четвертого эллипса */
+@keyframes colorChange {
+    0%, 100% {
+        fill: #C70016; /* Исходный цвет */
+    }
+    50% {
+        fill: #FFAA00; /* Цвет в середине анимации */
+    }
+}
+
+/* Анимация для изменения цвета первого эллипса */
+@keyframes colorChange1 {
+    0%, 100% {
+        fill: #FFAA00; /* Исходный цвет */
+    }
+    50% {
+        fill: #C70016; /* Цвет в середине анимации */
+    }
+}
+
+/* Анимация для изменения цвета второго эллипса */
+@keyframes colorChange2 {
+    0%, 100% {
+        fill: #C70016; /* Исходный цвет */
+    }
+    50% {
+        fill: #FFAA00; /* Цвет в середине анимации */
+    }
+}
+
+/* Анимация для изменения цвета третьего эллипса */
+@keyframes colorChange3 {
+    0%, 100% {
+        fill: #BD0B00; /* Исходный цвет */
+    }
+    50% {
+        fill: #FFAA00; /* Цвет в середине анимации */
+    }
+}
+
+/* Применение анимации ко всем эллипсам */
+
+.change-color {
+    animation: colorChange 2.3s infinite alternate; /* Анимация длится 3.5 секунды и бесконечно повторяется */
+}
+
+.first-ellipse {
+    animation: colorChange1 2.3s infinite alternate; /* Первые эллипсы */
+}
+.second-ellipse {
+    animation: colorChange2 2.3s infinite alternate; /* Вторые эллипсы */
+}
+.third-ellipse {
+    animation: colorChange3 2.3s infinite alternate; /* Третий эллипс */
+}

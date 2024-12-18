@@ -1,0 +1,78 @@
+/* Анимация для изменения цвета с #FFAA00 на #0060A7, затем на #F1001B и обратно */
+@keyframes colorChange_1 {
+    0%, 100% {
+        fill: #FFAA00; /* Исходный цвет */
+    }
+    33% {
+        fill: #0060A7; /* Переход к #0060A7 */
+    }
+    66% {
+        fill: #F1001B; /* Переход к #F1001B */
+    }
+}
+
+/* Анимация для изменения цвета от #0060A7 к #FFAA00, затем на #21070A и обратно */
+@keyframes colorChange_2 {
+    0%, 100% {
+        fill: #0060A7; /* Исходный цвет */
+    }
+    33% {
+        fill: #FFAA00; /* Переход к #FFAA00 */
+    }
+    66% {
+        fill: #21070A; /* Переход к #21070A */
+    }
+}
+
+/* Анимация для изменения цвета #F1001B на #0060A7 и обратно */
+@keyframes colorChange_3 {
+    0%, 100% {
+        fill: #F1001B;
+    }
+    50% {
+        fill: #0060A7;
+    }
+}
+
+/* Анимация для изменения цвета #21070A на #FFAA00 и обратно */
+@keyframes colorChange_4 {
+    0%, 100% {
+        fill: #21070A;
+    }
+    50% {
+        fill: #FFAA00;
+    }
+}
+
+/* Применение анимации ко всем прямоугольникам */
+.first-rect {
+    animation: colorChange_1 2.3s infinite alternate;
+}
+
+.second-rect {
+    animation: colorChange_1 2.3s infinite alternate;
+}
+
+.third-rect {
+    animation: colorChange_2 2.3s infinite alternate;
+}
+
+.fourth-rect {
+    animation: colorChange_2 2.3s infinite alternate;
+}
+
+.fifth-rect {
+    animation: colorChange_3 2.3s infinite alternate;
+}
+
+.sixth-rect {
+    animation: colorChange_3 2.3s infinite alternate;
+}
+
+.seventh-rect {
+    animation: colorChange_4 2.3s infinite alternate;
+}
+
+.eighth-rect {
+    animation: colorChange_4 2.3s infinite alternate;
+}

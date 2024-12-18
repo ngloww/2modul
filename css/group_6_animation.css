@@ -1,0 +1,53 @@
+/*объект №2 Анимация*/
+
+.color-yellow-red {
+    animation: yellowToRed 1s infinite alternate;
+}
+
+@keyframes yellowToRed {
+    0% {
+        fill: #FFAA00; /* Начальный цвет */
+    }
+    100% {
+        fill: #F1001B; /* Конечный цвет */
+    }
+}
+
+.color-blue-black {
+    animation: blueToBlack 1s infinite alternate;
+}
+
+@keyframes blueToBlack {
+    0% {
+        fill: #0060A7; /* Начальный цвет */
+    }
+    100% {
+        fill: #000000; /* Конечный цвет */
+    }
+}
+
+.color-red-yellow {
+    animation: redToYellow 1s infinite alternate;
+}
+
+@keyframes redToYellow {
+    0% {
+        fill: #F1001B; /* Начальный цвет */
+    }
+    100% {
+        fill: #FFAA00; /* Конечный цвет */
+    }
+}
+
+.color-black-blue {
+    animation: blackToBlue 1s infinite alternate;
+}
+
+@keyframes blackToBlue {
+    0% {
+        fill: #000000; /* Начальный цвет */
+    }
+    100% {
+        fill: #0060A7; /* Конечный цвет */
+    }
+}

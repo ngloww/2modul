@@ -1,77 +1,225 @@
 @font-face {
-  font-family: "Pragmatica"; 
-  src: url("./fonts/Pragmatica.ttf") format("truetype"); 
-  font-style: normal; 
-  font-weight: normal; 
-} 
+    font-family: 'Pragmatica';
+    src: local('PragmaticaCond-Medium'),
+         url('../fonts/PragmaticaCond-Medium.woff2') format('woff2'),
+         url('../fonts/PragmaticaCond-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  text-decoration: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    min-width: 320px;
+    font-family: 'Pragmatica', sans-serif;
+    font-weight: 500;
+    background-color: #FFF;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
 
 .container {
-	width: 1280px;
-	background-color: #000000;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;	
+    margin: 0 auto;
+    width: 1280px;
+    background-color: #000;
 }
 
-.scrolling-text-wrapper {
-	overflow: hidden;
+/*header*/
+
+.header__container {
+    color: #FFF;
+    overflow: hidden;                      /* Добавляем overflow: hidden, чтобы скрыть скролл */
 }
 
-.scrolling-text {
-  display: flex;
-  gap: 100px;
-  width: fit-content;
-  animation: scrolling 10s linear infinite;
-  -webkit-transform-style: preserve-3d;	
-} 
-
-.scrolling-text span{
-	width: fit-content;
-	color: #ffffff;	
-	font-size: 187px;
-	font-family: "Pragmatica";
-	white-space: nowrap;
-	-webkit-backface-visibility: hidden;
+.header__link {
+    display: flex;
 }
 
-.ornament-line-1 .item-1 { 
-	animation: fade_1 3s linear infinite; 
+.header__link span {
+    display: inline-block;
+    margin-right: 107px;                   /* Отступ между словами */
+    width: 600px;                          /* Ширина текста */
+    font-size: 187.31px;
+    font-weight: 500;
+    height: 202.3px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 2s linear infinite;
 }
 
-.ornament-line-1 .item-2 { 
-	animation: fade_2 3s linear infinite; 
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(calc(-100% - 107px));
+      }
 }
 
-.ornament-line-1 .item-right {
-	float: right;
-	animation: min_max 3s linear infinite; 
-}	
+/*hero*/
 
-
-
-
-
-@keyframes scrolling {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+.hero__block {
+    display: flex;
+    /*gap: 163px;*/
+    max-width: 1260px;
+    overflow: hidden;                       /* Скрывает части, выходящие за пределы */
 }
 
-@keyframes fade_1 {
-	0% { display: none; }
-	50% { display: none; }
-	51% { display: inline-block; }		
-	100% { display: inline-block;}
+.hero__three {
+    animation: moveEffect 2.3s infinite alternate;
 }
 
-@keyframes fade_2 {
-	0% { display: inline-block; }
-	48% { display: inline-block; }
-	50% { display: none; }		
-	100% { display: none; }
+/*section__three*/
+
+.section__three {
+    margin: 0 auto;
+    max-width: 1280px;
+    background-color: #000;
 }
 
-@keyframes min_max {
-	0% { transform: scale(1); }
-	50% { transform: scale(.85); }
-	100% { transform: scale(1); }			
-}	
+/*section__four*/
+
+.section__four {
+    background-color: #000;
+    margin: 0 auto;
+    max-width: 1280px;
+    min-height: 390px;
+}
+
+.section__block-one {
+    margin-right: 175px;                     /* Отступ справа */
+}
+
+/*section__five*/
+
+.section__five {
+    background-color: #000;
+    margin: 0 auto;
+    max-width: 1280px;
+    min-height: 390px;
+}
+
+.section__text {
+    padding-left: 49px;
+    margin: 0;
+    max-width: 790px;
+    min-height: 265px;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 41.63px;
+    letter-spacing: 2.78px;
+    transform: translateY(87px);
+}
+
+.section__one {
+    position: relative;
+}
+
+/* Перемещение влево до полной скрытости при наведении */
+.section__one:hover .section__cube {
+    transform: translateX(-1000px);            /* Уезжает за границы видимости */
+}
+
+.section__two {
+    transform: translateY(-17px);
+}
+
+.section__cube {
+    position: absolute;
+    top: 33px;
+    left: 70px;
+    transition: transform 2.3s;                /* Плавное перемещение */
+}
+
+.section__items {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 30px;
+    overflow: hidden;                          /* Скрытие элементов за пределами области видимости */
+}
+
+/*section__six*/
+
+.section__six {
+    background-color: #000;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*section__seven*/
+
+.section__seven {
+    background-color: #000;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.section__turntable {
+    justify-content: center;                  /* Центрирование по горизонтали */
+    display: flex;                            /* Включение flexbox */
+    align-items: center;                      /* Центрирование по вертикали */
+}
+
+/*section__eight*/
+
+.section__eight {
+    background-color: #000;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*footer*/
+
+.footer__container {
+    position: relative;
+    width: 1280px;            /* Ширина контейнера */
+    overflow: hidden;         /* Скрыть всё, что выходит за пределы контейнера */
+    white-space: nowrap;      /* Запретить перенос строк */
+}
+
+.marquee {
+    display: inline-block;
+    animation: scroll 15s linear infinite; /* Анимация бегущей строки */
+    will-change: transform;
+}
+
+.marquee span {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 187.31px;
+    line-height: 243.69px;
+    padding-right: 50px;         /* Отступ между словами */
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(calc(-50%));
+      }
+}
+
+
+

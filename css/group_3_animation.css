@@ -1,0 +1,12 @@
+.section__element-two {
+    animation: rotate 6s linear infinite; /* Анимация крутится бесконечно */
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg); /* Начальное состояние */
+    }
+    100% {
+        transform: rotate(360deg); /* Полный оборот */
+    }
+}

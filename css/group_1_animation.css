@@ -1,0 +1,61 @@
+/*объект №1 Анимация*/
+
+.color-black {
+    animation: changeBlackToOrange 1s infinite alternate;
+}
+
+@keyframes changeBlackToOrange {
+    0% {
+        fill: #000000;
+        /* Начальный цвет */
+    }
+
+    100% {
+        fill: #FFAA00;
+        /* Конечный цвет */
+    }
+}
+
+.color-orange-to-black {
+    animation: changeOrangeToBlack 1s infinite alternate;
+}
+
+@keyframes changeOrangeToBlack {
+    0% {
+        fill: #FFAA00;
+        /* Начальный цвет */
+    }
+
+    100% {
+        fill: #000000;
+        /* Конечный цвет */
+    }
+}
+
+.color-change1 {
+    animation: changeColor1 1s infinite alternate;
+}
+
+.color-change2 {
+    animation: changeColor2 1s infinite alternate;
+}
+
+@keyframes changeColor1 {
+    0% {
+        fill: #FFAA00;
+    }
+
+    100% {
+        fill: #C70016;
+    }
+}
+
+@keyframes changeColor2 {
+    0% {
+        fill: #C70016;
+    }
+
+    100% {
+        fill: #FFAA00;
+    }
+}

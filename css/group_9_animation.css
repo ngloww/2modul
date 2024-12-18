@@ -1,0 +1,40 @@
+/*Узоры*/
+
+@keyframes colorTransition {
+    0% {
+        fill: #DF8200; /* Начальный цвет */
+    }
+    100% {
+        fill: #BD0071; /* Конечный цвет */
+    }
+}
+
+.color-changing {
+    animation: colorTransition 2.3s infinite alternate; /* Применение анимации */
+}
+
+@keyframes fillColorChange {
+    0% {
+        fill: #D64851; /* Начальный цвет */
+    }
+    100% {
+        fill: #0060A7; /* Конечный цвет */
+    }
+}
+
+.colorAnimation {
+    animation: fillColorChange 2.3s infinite alternate; /* Применение анимации */
+}
+
+@keyframes fadeColorChange {
+    0% {
+        fill: #C70016; /* Начальный цвет */
+    }
+    100% {
+        fill: #FFFFFF; /* Конечный цвет */
+    }
+}
+
+.fadeAnimation {
+    animation: fadeColorChange 2.3s infinite alternate; /* Применение анимации */
+}

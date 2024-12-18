@@ -1,0 +1,48 @@
+.section__mask {
+    position: relative;
+    overflow: hidden; /* Скрывает всё, что выходит за пределы этого элемента */
+    height: 425px; /* Убедитесь, что высота предназначена для анимации */
+}
+
+.group-1 {
+    animation: moveGroup1 4s ease-in-out infinite; /* Бесконечная анимация для первой группы */
+}
+
+.group-2 {
+    animation: moveGroup2 4s ease-in-out infinite; /* Бесконечная анимация для второй группы */
+}
+
+/* Анимация для group-1 */
+@keyframes moveGroup1 {
+    0% {
+        transform: translate(0, 0); /* Исходное положение */
+    }
+    50% {
+        transform: translate(165px, -165px); /* Перемещение первой группы вправо и вверх */
+    }
+
+    75% {
+        transform: translate(0, 0); /* Исходное положение остаётся */
+    }
+    100% {
+        transform: translate(0, 0); /* Завершение анимации */
+    }
+}
+
+/* Анимация для group-2 */
+@keyframes moveGroup2 {
+    0% {
+        transform: translate(0, 0); /* Исходное положение */
+    }
+
+    50% {
+        transform: translate(-160px, 158px); /* Перемещение второй группы влево и вниз */
+    }
+    75% {
+        transform: translate(0, 0); /* Возврат в исходное положение */
+    }
+    100% {
+        transform: translate(0, 0); /* Завершение анимации */
+    }
+}
+

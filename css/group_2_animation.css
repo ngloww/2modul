@@ -1,0 +1,58 @@
+/*подгруппа №1*/
+.hover-group:hover .color-path {
+    fill: #FFAA00; /* Меняет цвет с #C70016 на #FFAA00 при наведении */
+}
+
+.hover-group:hover .color-rect {
+    fill: #000000; /* Меняет цвет с #167241 на #000000 при наведении */
+}
+
+.hover-group:hover .color_blue_black {
+    fill: #E1008B; /* Меняет цвет с #2A1352 на #E1008B при наведении */
+}
+
+/*Подгруппа №2*/
+
+.hover-group-4:hover .color-path1 {
+    fill: #C70016; /* Меняет цвет с #FFAA00 на #C70016 при наведении */
+}
+
+/*Подгруппа №3*/
+
+.hover-group-1:hover .color-path-1 {
+    fill: #C70016; /* Меняет цвет с #FFAA00 на #C70016 при наведении */
+}
+
+.hover-group-1:hover .color-path-2 {
+    fill: #E56700; /* Меняет цвет с #000000 на #E56700 при наведении */
+}
+
+/*Подгруппа №4*/
+
+.hover-group-3:hover .color-path-3 {
+    fill: #007EDC; /* Меняет цвет с #D64851 на #007EDC при наведении */
+}
+
+.hover-group-3:hover .color-path-4 {
+    fill: #E1008B; /* Меняет цвет с #000000 на #E1008B при наведении */
+}
+
+/*Подгруппа №5*/
+
+.hover-group-2:hover .color-path-5 {
+    fill: #000000; /* Меняет цвет с #1C5C3A на #000000 при наведении */
+}
+
+.hover-group-2:hover .color-path-6 {
+    fill: #FFAA00; /* Меняет цвет с #C50016 на #FFAA00 при наведении */
+}
+
+/*Подгруппа №6*/
+
+.hover-group-5:hover .color-path-7 {
+    fill: #E1008B; /* Меняет цвет с #2A1352 на #E1008B при наведении */
+}
+
+.hover-group-5:hover .color-path-8 {
+    fill: #C70016; /* Меняет цвет с #FFAA00 на #C70016 при наведении */
+}
