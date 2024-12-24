@@ -6,7 +6,7 @@
 }
 
 .moving {
-    animation: moveEffect 2.3s infinite;
+    animation: moveEffect 1.3s infinite;
     transform-origin: center; /* Установите центр для трансформации */
 }
 
@@ -24,12 +24,12 @@
 
 @keyframes moveEffect {
     0% {
-        transform: translateX(0);
+        transform: translateX(15px);
     }
     50% {
-        transform: translateX(-63px);
+        transform: translateX(-10px);
     }
     100% {
-        transform: translateX(0);
+        transform: translateX(15px);
     }
 }

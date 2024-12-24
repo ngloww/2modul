@@ -1,8 +1,4 @@
-.section__mask {
-    position: relative;
-    overflow: hidden; /* Скрывает всё, что выходит за пределы этого элемента */
-    height: 425px; /* Убедитесь, что высота предназначена для анимации */
-}
+
 
 .group-1 {
     animation: moveGroup1 4s ease-in-out infinite; /* Бесконечная анимация для первой группы */

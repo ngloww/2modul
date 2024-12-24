@@ -1,40 +1,71 @@
-/*Узоры*/
 
-@keyframes colorTransition {
+
+.live {
+    transform-origin: center; /* Устанавливаем точку вращения по центру элемента */
+    animation: rotateAnimation 3s infinite linear; /* Анимация со временем 2 секунды и бесконечным повторением */
+}
+
+@keyframes rotateAnimation {
     0% {
-        fill: #DF8200; /* Начальный цвет */
+        transform: rotate(0deg); /* Начальная позиция */
+    }
+    25% {
+        transform: rotate(40deg); /* Вращение вправо на 40 градусов */
+    }
+    50% {
+        transform: rotate(0deg); /* Возврат к 0 градусов */
+    }
+    75% {
+        transform: rotate(-40deg); /* Вращение влево на 40 градусов */
     }
     100% {
-        fill: #BD0071; /* Конечный цвет */
+        transform: rotate(0deg); /* Возврат к 0 градусов */
     }
 }
 
-.color-changing {
-    animation: colorTransition 2.3s infinite alternate; /* Применение анимации */
+.mint {
+    transform-origin: center; /* Устанавливаем точку вращения по центру элемента */
+    animation: spin 4s infinite linear; /* Анимация со временем 2 секунды и бесконечным повторением */
 }
 
-@keyframes fillColorChange {
+@keyframes spin {
     0% {
-        fill: #D64851; /* Начальный цвет */
+        transform: rotate(0deg); /* Начальная позиция */
+    }
+    25% {
+        transform: rotate(-40deg); /* Вращение вправо на 40 градусов */
+    }
+    50% {
+        transform: rotate(0deg); /* Возврат к 0 градусов */
+    }
+    75% {
+        transform: rotate(40deg); /* Вращение влево на 40 градусов */
     }
     100% {
-        fill: #0060A7; /* Конечный цвет */
+        transform: rotate(0deg); /* Возврат к 0 градусов */
     }
 }
 
-.colorAnimation {
-    animation: fillColorChange 2.3s infinite alternate; /* Применение анимации */
+.lite {
+    transform-origin: center; /* Устанавливаем точку вращения по центру элемента */
+    animation: spill 2s infinite linear; /* Анимация со временем 2 секунды и бесконечным повторением */
 }
 
-@keyframes fadeColorChange {
+@keyframes spill {
     0% {
-        fill: #C70016; /* Начальный цвет */
+        transform: rotate(0deg); /* Начальная позиция */
+    }
+    25% {
+        transform: rotate(40deg); /* Вращение вправо на 40 градусов */
+    }
+    50% {
+        transform: rotate(0deg); /* Возврат к 0 градусов */
+    }
+    75% {
+        transform: rotate(-40deg); /* Вращение влево на 40 градусов */
     }
     100% {
-        fill: #FFFFFF; /* Конечный цвет */
+        transform: rotate(0deg); /* Возврат к 0 градусов */
     }
 }
 
-.fadeAnimation {
-    animation: fadeColorChange 2.3s infinite alternate; /* Применение анимации */
-}

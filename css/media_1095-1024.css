@@ -1,0 +1,150 @@
+/*1024*/
+@media(max-width: 1095px) {
+    /*header*/
+
+    .header {
+        width: 100%;
+        min-height: 200px;
+    }
+
+    /*hero*/
+
+    .list__hero {
+        flex-wrap: wrap;
+    }
+
+    .hero__one {
+        margin-right: auto;
+    }
+
+    .hero__two {
+        margin-right: 0;
+    }
+
+    .hero__three {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .hero__element1 {
+        max-width: 450px;
+        min-height: 450px;
+        height: 100%;
+    }
+
+    .hero__element2 {
+        max-width: 450px;
+        min-height: 450px;
+        height: 100%;
+    }
+
+    .hero__element3 {
+        max-width: 450px;
+        min-height: 450px;
+        height: 100%;
+    }
+
+    /*section__three*/
+
+    .section__element-one {
+        width: 823px;
+        height: 1368px;
+        height: 100%
+    }
+
+    /*section__four*/
+
+    .hero__four {
+        flex-wrap: wrap;
+    }
+
+    .section__element-two {
+        width: 450px;
+        height: 450px;
+        height: 100%
+    }
+
+    .section__element-three {
+        width: 450px;
+        height: 450px;
+        height: 100%
+    }
+
+    .section__element-four {
+        width: 450px;
+        height: 450px;
+        height: 100%
+    }
+
+    .section__block-three {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /*section__five*/
+
+    .section__items {
+        flex-wrap: wrap;
+    }
+
+    .section__mask {
+        width: 450px;
+        height: 450px;
+        height: 100%;
+    }
+
+    .section__one {
+        width: 700px;
+        height: 700px;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .section__cube {
+        width: 700px;
+        height: 700px;
+        height: 100%;
+        transform: translateY(0px);
+        top: 0;
+        left: 0;
+    }
+
+    .section__text {
+        max-width: 475px;
+        min-height: 220px;
+        font-size: 18px;
+        padding-left: 0;
+        line-height: 25px;
+        transform: translate(115px, 26px);
+    }
+
+    .section__two {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .section__seven {
+        width: 800px;
+        height: 800px;
+        height: auto;
+    }
+
+    /*footer*/
+
+    .marquee span {
+        color: #FFF;
+        font-weight: 500;
+        font-size: 187.31px;
+        line-height: 150px;
+        padding-right: 50px;         /* Отступ между словами */
+    }
+
+    .market span {
+        color: #FFF;
+        font-weight: 500;
+        font-size: 130px;
+        line-height: 169.13px;
+        padding-right: 20px;         /* Отступ между словами */
+    }
+}

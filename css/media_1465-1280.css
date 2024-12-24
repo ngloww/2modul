@@ -1,0 +1,52 @@
+/*1280*/
+@media(max-width: 1465px) {
+    /*header*/
+
+    .header {
+        width: 100%;
+        min-height: 200px
+    }
+
+    .header__link span {
+        font-size: 187.31px;
+        line-height: 160.69px;
+        padding-right: auto;
+    }
+
+    /*section__five*/
+
+    .section__five {
+        margin-bottom: 0;
+    }
+
+    .section__cube {
+        width: 637px;
+        height: 250px;
+        height: 100%;
+        top: 4px;
+        left: 40px;
+    }
+
+    .section__text {
+        max-width: 620px;
+        min-height: 220px;
+        font-size: 25px;
+        line-height: 30px;
+        transform: translateY(179px);
+        padding-left: 52px;
+    }
+
+    .section__two {
+        transform: translateY(5px);
+    }
+
+    .section__items {
+        gap: 30px;
+    }
+
+    .section__mask {
+        width: 350px;
+        height: 350px;
+        height: 100%;
+    }
+}

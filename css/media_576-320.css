@@ -1,0 +1,133 @@
+/*320*/
+
+@media(max-width: 576px) {
+    /*header*/
+
+    .header {
+        min-height: 50px;
+    }
+
+    .header__link {
+        margin: 0;
+    }
+
+    .header__link span {
+        font-size: 50px;
+        line-height: 50px;
+        padding-right: auto;
+    }
+
+    /*section hero*/
+
+    .hero__element1 {
+        max-width: 320px;
+        min-height: 320px;
+        height: 100%
+    }
+
+    .hero__element2 {
+        max-width: 320px;
+        min-height: 320px;
+        height: 100%
+    }
+
+    .hero__element3 {
+        max-width: 320px;
+        min-height: 320px;
+        height: 100%
+    }
+
+    .moving {
+        animation: none;
+    }
+
+    .hero__three {
+        animation: none;
+    }
+
+    /*section__three*/
+
+    .section__element-one {
+        max-width: 320px;
+        min-height: 320px;
+        height: 100%;
+    }
+
+    /*section__four*/
+
+    .section__element-two {
+        max-width: 320px;
+        min-height: 320px;
+        height: 100%;
+    }
+
+    .section__element-three {
+        max-width: 320px;
+        min-height: 320px;
+        height: 100%;
+    }
+
+    .section__element-four {
+        max-width: 320px;
+        min-height: 320px;
+        height: 100%;
+    }
+
+    /*section__five*/
+
+    .section__text {
+        position: none;
+        max-width: 280px;
+        width: 100%;
+        height: 100%;
+        line-height: 20px;
+        margin-left: 0;
+    }
+
+    .text__five {
+        transform: translateX(-79px);
+    }
+
+    .section__mask {
+        max-width: 300px;
+        min-height: 300px;
+        height: 100%;
+    }
+
+    /*section__six*/
+
+    .section__svg-one {
+        width: 100%;
+        height: auto;
+    }
+
+    /*section__seven*/
+
+    .section__svg {
+        max-width: 320px;
+        min-height: 320px;
+        height: 100%;
+    }
+
+    /*section__eight*/
+
+    .section__svg-two {
+        width: 100%;
+        height: auto;
+    }
+
+    /*footer*/
+
+    .marquee span {
+        font-size: 50px;
+        line-height: 50px;
+        padding-right: 50px;         /* Отступ между словами */
+    }
+
+    .market span {
+        font-size: 40px;
+        line-height: 50px;
+        padding-right: 20px;         /* Отступ между словами */
+    }
+
+}

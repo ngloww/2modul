@@ -1,0 +1,40 @@
+/*414*/
+
+@media(max-width: 700px) {
+     /*header*/
+
+     .header {
+        margin: 0;
+    }
+
+    .section__cube {
+        display: none;
+    }
+
+    .section__text {
+        max-width: 400px;
+        height: 100%;
+        line-height: 30px;
+        margin-left: 0;
+    }
+
+    .text__five {
+        transform: translateX(-25px);
+    }
+
+    /*footer*/
+
+    .marquee span {
+        font-size: 83.1px;
+        line-height: 80px;
+        padding-right: 50px;         /* Отступ между словами */
+    }
+
+    .market span {
+        font-size: 67.94px;
+        line-height: 70px;
+        padding-right: 20px;         /* Отступ между словами */
+    }
+
+
+}
